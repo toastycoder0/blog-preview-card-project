@@ -12,7 +12,7 @@ const { illustration, title, type, date, description, user } = Astro.props.detai
 <article
   class='w-full max-w-[24rem] bg-white p-6 rounded-[1.25rem] border-[0.063rem] border-black flex flex-col gap-6 card-shadow'
 >
-  <header>
+  <header role='banner'>
     <Image
       class='w-full h-[12.5rem] rounded-[0.625rem] object-cover'
       width={279}
@@ -22,7 +22,7 @@ const { illustration, title, type, date, description, user } = Astro.props.detai
     />
   </header>
 
-  <main class='flex flex-col gap-3'>
+  <section role='contentinfo' class='flex flex-col gap-3'>
     <span class='py-1 px-3 bg-yellow font-extrabold rounded-s rounded-e w-fit'>{type}</span>
 
     <p class='text-sm'>{date}</p>
@@ -34,9 +34,9 @@ const { illustration, title, type, date, description, user } = Astro.props.detai
     </h1>
 
     <p class='text-base text-grey'>{description}</p>
-  </main>
+  </section>
 
-  <footer class='flex items-center gap-3'>
+  <footer role='contentinfo' class='flex items-center gap-3'>
     <Image class='rounded-full' width={32} height={32} src={user.avatar} alt={user.title} />
     <p class='font-extrabold'>{user.title}</p>
   </footer>
