@@ -36,7 +36,7 @@ const { illustration, title, type, date, description, user } = Astro.props.detai
 
   <section class='flex items-center gap-3'>
     <Image class='rounded-full' width={32} height={32} src={user.avatar} alt={user.title} />
-    <p class='font-extrabold'>{user.title}</p>
+    <h2 class='font-extrabold'>{user.title}</h2>
   </section>
 </article>
 
