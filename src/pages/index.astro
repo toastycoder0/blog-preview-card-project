@@ -1,7 +1,9 @@
 ---
 import RootLayout from '@/components/RootLayout.astro'
+import PreviewCard from '@/components/PreviewCard.astro'
+import details from '@/data.json'
 ---
 
 <RootLayout>
-  <h1>Hello</h1>
+  <PreviewCard details={details} />
 </RootLayout>
