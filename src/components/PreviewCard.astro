@@ -25,7 +25,12 @@ const { illustration, title, type, date, description, user } = Astro.props.detai
 
     <p class='text-sm'>{date}</p>
 
-    <h1 class='font-extrabold text-2xl'>{title}</h1>
+    <a
+      href='/'
+      class='font-extrabold text-2xl duration-200 outline-none hover:text-yellow focus-visible:text-yellow'
+    >
+      {title}
+    </a>
 
     <p class='text-base text-grey'>{description}</p>
   </main>
