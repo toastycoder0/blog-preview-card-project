@@ -3,6 +3,8 @@
 
 This is a solution to the [blog preview card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS).
 
+[You can view the page by clicking here](https://blog-preview-card-project.pages.dev)
+
 ![Design preview for the Blog preview card coding challenge](./public/preview.webp)
 
 </div>
